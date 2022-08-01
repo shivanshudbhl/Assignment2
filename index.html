@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="container">
+      <ul>
+        <li class="navigation"><a class="active" href="#home">Home</a></li>
+        <li class="navigation"><a href="#seventh">Contact</a></li>
+        <li class="navigation"><a href="#third">About</a></li>
+      </ul>
+    </nav>
+
+    <section id="first">
+      <div class="banner">
+        <h1 class="hero-text">Shivanshu University</h1>
+      </div>
+    </section>
+
+    <section id="second">
+      <div class="stats">
+        <h2 class="stats-text">Statistics records(2020)</h2>
+        <table class="table">
+          <thead>
+            <th>Branch</th>
+            <th>Admissions</th>
+            <th>Graduates</th>
+            <th>Research papers</th>
+            <th>Avg Salary(LPA)</th>
+          </thead>
+          <tbody>
+            <td>
+              <ul>
+                <li>CSE</li>
+                <li>ECE</li>
+                <li>EEE</li>
+                <li>MECH</li>
+                <li>CIVIL</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>134</li>
+                <li>120</li>
+                <li>120</li>
+                <li>124</li>
+                <li>124</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>124</li>
+                <li>120</li>
+                <li>119</li>
+                <li>120</li>
+                <li>124</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>15</li>
+                <li>8</li>
+                <li>14</li>
+                <li>17</li>
+                <li>5</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>9.23</li>
+                <li>5</li>
+                <li>4</li>
+                <li>5</li>
+                <li>5</li>
+              </ul>
+            </td>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="third">
+      <div class="faculty">
+        <h2 class="faculty-text">Faculty and honors</h2>
+        <div class="faculty-container">
+          <div class="professor">
+            <img
+              class="faculty-1"
+              src="./images/Lecturer-Photo.jpg"
+              alt="prof-image"
+            />
+            <div class="prof-desc">
+              <em>Daniel richards</em>
+              <p class="prof-text">Assistant professor(CSE)</p>
+              <p class="prof-text">B.Tech(Harvard) 1992-1996</p>
+              <p class="prof-text">6 Research papers published</p>
+            </div>
+          </div>
+          <div class="professor">
+            <img
+              class="faculty-1"
+              src="./images/Sangeeta-Bhatia-Most-Innovative-Women-Professors.jpg"
+              alt="prof-image"
+            />
+            <div class="prof-desc">
+              <em>Sangeeta bhatia</em>
+              <p class="prof-text">Senior professor(ECE)</p>
+              <p class="prof-text">B.Tech-M.Tech(IIT KGP) 2002-2008</p>
+              <p class="prof-text">PHd gold medalist(Semi-conductors)</p>
+            </div>
+          </div>
+          <div class="professor">
+            <img
+              class="faculty-1"
+              src="./images/crop635w_how-to-pick-the-best-professors.jpg"
+              alt="prof-image"
+            />
+            <div class="prof-text">
+              <em>John galliard</em>
+              <p class="prof-text">Professor(Mech)</p>
+              <p class="prof-text">B.Tech(IITB) 2002-2006</p>
+              <p class="prof-text">8 Research papers published</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fourth">
+      <h2 class="campus-text">Campus Tour</h2>
+      <video width="800" height="500" controls>
+        <source type="video/mp4" src="./video/Pexels Videos 2002527.mp4" />
+      </video>
+    </section>
+
+    <section id="fifth">
+      <h2 class="query-text">Query Form</h2>
+      <div class="form-style-5">
+        <form name="myForm" onsubmit="return validateForm()">
+          <fieldset>
+            <legend><span class="number">1</span> Candidate Info</legend>
+            <input type="text" name="name" placeholder="Your Name *" />
+            <input type="email" name="email" placeholder="Your Email *" />
+            <input type="number" name="phone" placeholder="Contact*" id="">
+          </fieldset>
+          <fieldset>
+            <legend><span class="number">2</span> Message</legend>
+            <textarea name="query" placeholder="Query"></textarea>
+          </fieldset>
+          <input type="submit" value="Send" />
+        </form>
+      </div>
+    </section>
+    <section id="sixth">
+      <h2 class="frame-text">College Ranking</h2>
+      <div class="iframe">
+        <iframe
+          class="clg-duniya"
+          src="https://www.youtube.com/embed/dsGUW6tjAKs"
+          height="200"
+          width="300"
+          frameborder="0"
+        ></iframe>
+      </div>
+    </section>
+
+    <section id="seventh">
+      <div class="Faq">
+        <h2 class="faq-text">FAQs</h2>
+
+        <div class="question">
+          <h3 class="quesn-text">1.Which entrance examination is for admission in University?</h3>
+          
+            <button class="button"  onclick="showAnswer(this)">+</button>
+            
+          
+            <h3  class="showme"style="display:none">JEE mains</h3>
+           
+         
+        </div>
+        <div class="question">
+          <h3 class="quesn-text">2.What is the current ranking of university in NIRF?</h3>
+          <button class="button"  onclick="showAnswer(this)">+</button>
+          
+            <h3  class="showme"style="display:none">19</h3>
+        </div>
+        <div class="question">
+          <h3 class="quesn-text">3.Average package of the university</h3>
+          <button class="button"  onclick="showAnswer(this)">+</button>
+          
+          <h3 class="showme"style="display:none">8 Lpa</h3>
+        </div>
+        <div class="question">
+          <h3 class="quesn-text">4. Total tuition fees of B.tech?</h3>
+          <button class="button"  onclick="showAnswer(this)">+</button>
+          
+          <h3  class="showme"style="display:none">12 lakhs</h3>
+        </div>
+        <div class="question">
+          <h3 class="quesn-text">5.How much is the campus area?</h3>
+          <button class="button"  onclick="showAnswer(this)">+</button>
+          
+          <h3 class="showme"style="display:none">300 acre</h3>
+        </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="eight">
+    <h2 class="faq-text">Student's review</h2>
+     <!-- Slideshow container -->
+       <div class="slideshow-container fade">
+
+  <!-- Full images with numbers and message Info -->
+  <div class="Containers">
+    <div class="MessageInfo">1 / 3</div>
+    <img class="carousel-img"  src="./images/happy-indian-student-wearing-eyeglasses-holding-notebooks-showing-thumbs-up-education-concept-portrait-smiling-female-sign-214751456.jpg" style="width:100%">
+
+    <div class="Info">
+      <h2>Camelia</h2>
+      <p>"University Campus is amazing"</p>
+    </div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">2 / 3</div>
+    <img class="carousel-img" src="./images/photo-1604177091072-b7b677a077f6.jpg" style="width:100%">
+    <div class="Info">
+      <h2>Manish</h2>
+      <p>"Faculty is amazing and placements are on top"</p>
+    </div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">3 / 3</div>
+    <img class="carousel-img" src="./images/depositphotos_8803246-stock-photo-asian-college-student.jpg" style="width:100%">
+    <div class="Info">
+      <h2>Katrina</h2>
+      <p>"Just love the vibes of the campus"</p>
+    </div>
+  </div>
+
+  <!-- Back and forward buttons -->
+  <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The circles/dots -->
+<div style="text-align:center">
+  <span class="dots" onclick="currentSlide(1)"></span>
+  <span class="dots" onclick="currentSlide(2)"></span>
+  <span class="dots" onclick="currentSlide(3)"></span>
+</div> 
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="social">
+          <a href="https://www.instagram.com/shivanshudobhal/">Instagram</a>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/home.php">Facebook</a>
+        </div>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/shivanshu-dobhal-544188173//"
+            >linkedin</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
